@@ -56,9 +56,15 @@ public class LambtonStringTools
     //5 - REPLACING SUBSTRING WITH NEW STRING IN EXISTING STRING
     public static String replaceSubString(String originalString, String findString, String newString) 
     {
-         //String s1,s2,s3;
-         //s1=originalString.toLowerCase();
-         //s2=findString.toLowerCase();
-         //s3=newString.toLowerCase();
+
+         originalString=originalString.toLowerCase();
+         findString=findString.toLowerCase();
+         newString=newString.toLowerCase();
+         if(originalString.contains(findString))
+         {
+             originalString=originalString.replace(findString,newString);
+         }
+         return originalString;
+
     }
 }
