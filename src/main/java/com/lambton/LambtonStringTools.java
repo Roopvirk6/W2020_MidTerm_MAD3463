@@ -42,6 +42,8 @@ public class LambtonStringTools
     public static int binaryToDecimal(String s) 
     {
        int decimal=0;
+       decimal=Integer.parseInt(s,2);
+
 
     }
      
