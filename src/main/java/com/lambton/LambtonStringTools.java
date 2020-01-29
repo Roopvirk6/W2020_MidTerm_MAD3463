@@ -15,11 +15,10 @@ public class LambtonStringTools
     public static String reverse(String s)
     {
         char ch[] = s.toCharArray();
-        String rev="";
-        int length=s.length();
-        for(int i=length-1;i>=0;i--)
+        String rev = "";
+        for(int i=ch.length-1;i>=0;i--)
         {
-            rev=rev+s[i];
+            rev+=ch[i];
         }
 
         return rev;
@@ -30,7 +29,8 @@ public class LambtonStringTools
     {
 
         String [] str=s.split("//s+");
-        
+
+
     }
         
     //3 - FIND MOST FREQUENT CHARACTER FROM STRING
