@@ -15,7 +15,7 @@ public class LambtonStringTools
     public static String reverse(String s)
     {
         char ch[] = s.toCharArray();
-        String rev = "";
+        String rev= "";
         for(int i=ch.length-1;i>=0;i--)
         {
             rev+=ch[i];
@@ -31,6 +31,7 @@ public class LambtonStringTools
         String [] str=s.split("//s+");
 
 
+
     }
         
     //3 - FIND MOST FREQUENT CHARACTER FROM STRING
@@ -44,6 +45,7 @@ public class LambtonStringTools
     {
        int decimal=0;
        decimal=Integer.parseInt(s,2);
+       return decimal;
 
 
     }
@@ -51,6 +53,9 @@ public class LambtonStringTools
     //5 - REPLACING SUBSTRING WITH NEW STRING IN EXISTING STRING
     public static String replaceSubString(String originalString, String findString, String newString) 
     {
-
+         //String s1,s2,s3;
+         //s1=originalString.toLowerCase();
+         //s2=findString.toLowerCase();
+         //s3=newString.toLowerCase();
     }
 }
