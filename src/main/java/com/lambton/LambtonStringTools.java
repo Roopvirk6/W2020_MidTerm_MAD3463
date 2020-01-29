@@ -27,18 +27,35 @@ public class LambtonStringTools
     //2 - FORMAT INITIALS OF STRING
     public static String initials(String s)
     {
-      String []
+      String [] words=s.split("//s+");
+      int i=0;
+      String cap="";
+      if(words.length==3)
+      {
+          cap=words[0].substring(0,1).toUpperCase()+
+                  words[1].substring(0,1).toUpperCase()+
+                  words[2].substring(0,1).toUpperCase()+
+                  words[2].substring(1).toLowerCase();
+      }
+      else
+          cap=null;
+      return cap;
 
     }
         
     //3 - FIND MOST FREQUENT CHARACTER FROM STRING
-    public static String mostFrequent(String s) 
-    {
-        int countofcharacter =256;
-        int [] count = new int[countofcharacter];
-        
+    public static String mostFrequent(String s) {
 
+        //int countofcharacter =256;
+        //int [] count = new int[countofcharacter];
+        //for(int i=0;i<countofcharacter;i++)
+        //count[s.charAt(i)]++;
+        return null;
     }
+
+
+
+
     
     //4 - CONVERT BINARY NUMBER TO DECIMALS
     public static int binaryToDecimal(String s) 
