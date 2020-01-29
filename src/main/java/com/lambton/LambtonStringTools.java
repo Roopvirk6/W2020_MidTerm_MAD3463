@@ -25,15 +25,19 @@ public class LambtonStringTools
     }
     
     //2 - FORMAT INITIALS OF STRING
-    public static String initials(String s) 
+    public static String initials(String s)
     {
+      String []
 
     }
         
     //3 - FIND MOST FREQUENT CHARACTER FROM STRING
     public static String mostFrequent(String s) 
     {
-        return null;
+        int countofcharacter =256;
+        int [] count = new int[countofcharacter];
+        
+
     }
     
     //4 - CONVERT BINARY NUMBER TO DECIMALS
