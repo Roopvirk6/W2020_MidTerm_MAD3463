@@ -28,10 +28,6 @@ public class LambtonStringTools
     public static String initials(String s) 
     {
 
-        String [] str=s.split("//s+");
-
-
-
     }
         
     //3 - FIND MOST FREQUENT CHARACTER FROM STRING
@@ -44,11 +40,10 @@ public class LambtonStringTools
     public static int binaryToDecimal(String s) 
     {
        int decimal=0;
-       if(decimal=Integer.parseInt(s,2))
-       {
-           return decimal;
-       }
-       else return 0;
+       decimal=Integer.parseInt(s,2);
+        return decimal;
+
+
 
 
     }
@@ -63,8 +58,10 @@ public class LambtonStringTools
          if(originalString.contains(findString))
          {
              originalString=originalString.replace(findString,newString);
+             return originalString;
          }
-         return originalString;
+         else
+             return "string not found";
 
     }
 }
