@@ -27,31 +27,45 @@ public class LambtonStringTools
     //2 - FORMAT INITIALS OF STRING
     public static String initials(String s)
     {
-      String [] words=s.split("//s+");
-      int i=0;
-      String cap="";
-      if(words.length==3)
+      String [] letters=s.split("//s+");
+      String newword="";
+      if(letters.length==3)
       {
-          cap=words[0].substring(0,1).toUpperCase()+
-                  words[1].substring(0,1).toUpperCase()+
-                  words[2].substring(0,1).toUpperCase()+
-                  words[2].substring(1).toLowerCase();
+          newword=letters[0].substring(0,1).toUpperCase() + "." +
+                  letters[1].substring(0,1).toUpperCase() + "." +
+                  letters[2].substring(0,1).toUpperCase() + "." +
+                  letters[2].substring(1).toLowerCase();
       }
-      else
-          cap=null;
-      return cap;
+      else {
+          newword= null;
+      }
+      return newword;
 
     }
         
     //3 - FIND MOST FREQUENT CHARACTER FROM STRING
-    public static String mostFrequent(String s) {
+    public static char mostFrequent(String s) {
 
-        //int countofcharacter =256;
-        //int [] count = new int[countofcharacter];
-        //for(int i=0;i<countofcharacter;i++)
-        //count[s.charAt(i)]++;
-        return null;
+        int countofcharacter = 256;
+        int[] count = new int[countofcharacter];
+        int i;
+        for (i = 0; i < s.length(); i++)
+            (count[s.charAt(i)])++;
+        int mostFrequent = 0;
+        for (i = 0; i < countofcharacter; i++)
+        {
+            if (count[i] > count[mostFrequent])
+            {
+                mostFrequent = i;
+            }
+            else if (count[i] == count[mostFrequent])
+            {
+                mostFrequent = i;
+            }
+        }
+        return (char) mostFrequent;
     }
+
 
 
 
