@@ -79,7 +79,7 @@ public class LambtonStringTools
     {
        int decimal=0;
        //decimal=Integer.parseInt(s,2);
-        //return decimal;
+        return decimal;
 
 
 
