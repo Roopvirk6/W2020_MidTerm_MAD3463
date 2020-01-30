@@ -28,7 +28,7 @@ public class LambtonStringTools
     public static String initials(String s)
     {
         String [] letters=s.split("//s+");
-      //String newword="";
+      String newword="";
       //if(letters.length==3)
       {
           newword=letters[0].substring(0,1).toUpperCase() + "." +
