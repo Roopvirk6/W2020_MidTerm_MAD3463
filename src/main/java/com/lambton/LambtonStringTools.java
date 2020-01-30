@@ -36,7 +36,7 @@ public class LambtonStringTools
                   letters[2].substring(0,1).toUpperCase() + "." +
                   letters[2].substring(1).toLowerCase();
       }
-      //else {
+      else {
           newword= null;
       }
       return newword;
