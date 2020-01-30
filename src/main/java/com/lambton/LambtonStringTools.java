@@ -27,7 +27,7 @@ public class LambtonStringTools
     //2 - FORMAT INITIALS OF STRING
     public static String initials(String s)
     {
-        //String [] letters=s.split("//s+");
+        String [] letters=s.split("//s+");
       //String newword="";
       //if(letters.length==3)
       {
