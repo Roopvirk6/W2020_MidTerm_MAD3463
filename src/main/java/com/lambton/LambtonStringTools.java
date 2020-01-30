@@ -38,7 +38,7 @@ public class LambtonStringTools
       String init = "";
       if(letters.length==3)
       {
-          init = letters[0].substring(0,1).toUpperCase() + "." + letters[1].substring(0,1).toUpperCase() + "." +
+          //init = letters[0].substring(0,1).toUpperCase() + "." + letters[1].substring(0,1).toUpperCase() + "." +
                   letters[2].substring(0,1).toUpperCase() + "." +
                   letters[2].substring(1).toLowerCase();
       }
