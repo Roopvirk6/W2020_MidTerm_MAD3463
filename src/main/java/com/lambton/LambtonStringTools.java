@@ -27,16 +27,16 @@ public class LambtonStringTools
     //2 - FORMAT INITIALS OF STRING
     public static String initials(String s)
     {
-      String [] letters=s.split("//s+");
-      String newword="";
-      if(letters.length==3)
+        //String [] letters=s.split("//s+");
+      //String newword="";
+      //if(letters.length==3)
       {
           newword=letters[0].substring(0,1).toUpperCase() + "." +
                   letters[1].substring(0,1).toUpperCase() + "." +
                   letters[2].substring(0,1).toUpperCase() + "." +
                   letters[2].substring(1).toLowerCase();
       }
-      else {
+      //else {
           newword= null;
       }
       return newword;
@@ -46,13 +46,13 @@ public class LambtonStringTools
     //3 - FIND MOST FREQUENT CHARACTER FROM STRING
     public static char mostFrequent(String s) {
 
-        //int countofcharacter = 256;
-        //int[] count = new int[countofcharacter];
-        //int i;
-        //for (i = 0; i < s.length(); i++)
+        int countofcharacter = 256;
+        int[] count = new int[countofcharacter];
+        int i;
+        for (i = 0; i < s.length(); i++)
             (count[s.charAt(i)])++;
-        //int mostFrequent = 0;
-        //for (i = 0; i < countofcharacter; i++)
+        int mostFrequent = 0;
+        for (i = 0; i < countofcharacter; i++)
         {
             if (count[i] > count[mostFrequent])
             {
@@ -63,7 +63,7 @@ public class LambtonStringTools
                 mostFrequent = i;
             }
         }
-        //return (char) mostFrequent;
+        return (char) mostFrequent;
     }
 
 
