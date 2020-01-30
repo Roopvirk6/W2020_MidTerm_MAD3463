@@ -35,18 +35,17 @@ public class LambtonStringTools
         public static String initials(String s)
     {
         String [] letters=s.split("//s+");
-      String newword="";
+      String init = "";
       if(letters.length==3)
       {
-          newword=letters[0].substring(0,1).toUpperCase() + "." +
-                  letters[1].substring(0,1).toUpperCase() + "." +
+          init = letters[0].substring(0,1).toUpperCase() + "." + letters[1].substring(0,1).toUpperCase() + "." +
                   letters[2].substring(0,1).toUpperCase() + "." +
                   letters[2].substring(1).toLowerCase();
       }
       else {
-          newword= null;
+          init= null;
       }
-      return newword;
+      return init;
 
     }
         
@@ -78,7 +77,7 @@ public class LambtonStringTools
     public static int binaryToDecimal(String s) 
     {
        int decimal=0;
-       //decimal=Integer.parseInt(s,2);
+       decimal=Integer.parseInt(s,2);
         return decimal;
 
 
