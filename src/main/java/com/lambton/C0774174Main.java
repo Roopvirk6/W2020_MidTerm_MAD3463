@@ -18,7 +18,7 @@ public class C0774174Main {
         System.out.println("Input  : Failure will never overtake me if my determination to succeed is strong enough");
         System.out.println("Output : " + rev);
 
-        rev = LambtonStringTools.reverse(null);
+        //rev = LambtonStringTools.reverse(null);
         System.out.println("Input  : NULL");
         if(rev == null)
         {
@@ -38,7 +38,7 @@ public class C0774174Main {
         System.out.println("Output : " + decimal);
         
         System.out.println("\n--- Most Frequent");
-        String mostFrequent = LambtonStringTools.mostFrequent("pritesh kumar pAtEl");
+        char mostFrequent = LambtonStringTools.mostFrequent("pritesh kumar pAtEl");
         System.out.println("Input  : pritesh kumar pAtEl");
         System.out.println("Output : " + mostFrequent);
         mostFrequent = LambtonStringTools.mostFrequent("aassrrttggg desf tersgdv");

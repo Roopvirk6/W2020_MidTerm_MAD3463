@@ -14,7 +14,7 @@ public class LambtonStringTools
     //1 - REVERSE STRING
     public static String reverse(String s)
     {
-        char ch[] = s.toCharArray();
+        char ch [] = s.toCharArray();
         String rev= "";
         for(int i=ch.length-1;i>=0;i--)
         {
@@ -46,13 +46,13 @@ public class LambtonStringTools
     //3 - FIND MOST FREQUENT CHARACTER FROM STRING
     public static char mostFrequent(String s) {
 
-        int countofcharacter = 256;
-        int[] count = new int[countofcharacter];
-        int i;
-        for (i = 0; i < s.length(); i++)
+        //int countofcharacter = 256;
+        //int[] count = new int[countofcharacter];
+        //int i;
+        //for (i = 0; i < s.length(); i++)
             (count[s.charAt(i)])++;
-        int mostFrequent = 0;
-        for (i = 0; i < countofcharacter; i++)
+        //int mostFrequent = 0;
+        //for (i = 0; i < countofcharacter; i++)
         {
             if (count[i] > count[mostFrequent])
             {
@@ -63,14 +63,10 @@ public class LambtonStringTools
                 mostFrequent = i;
             }
         }
-        return (char) mostFrequent;
+        //return (char) mostFrequent;
     }
 
 
-
-
-
-    
     //4 - CONVERT BINARY NUMBER TO DECIMALS
     public static int binaryToDecimal(String s) 
     {
